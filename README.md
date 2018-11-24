@@ -1,5 +1,5 @@
 ## 项目名称
-商派--appcenter
+appcenter
 ## 项目运行
 npm run dev                 （启动开发环境）
 
