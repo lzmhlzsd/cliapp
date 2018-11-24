@@ -1,0 +1,84 @@
+// Here are the variables to cover, such as:
+// @primary-color          : #5779BD;
+@primary-color          : #5779BD;
+
+// Text
+@extLighten-color       : #999;
+@lighten-color          : #555;
+@darken-color           : #333;
+
+// Line
+@line-color             :#EAEAEA;
+
+
+
+
+// @hover-background       :#EEF1F8;
+@hover-background       : tint(@primary-color, 95%);
+
+@background-color-select-hover       :@hover-background;
+// Layout and Grid
+@layout-header-background    : @primary-color;
+@layout-header-height        : 50px;
+@layout-header-padding       : 0 20px;
+// @layout-sider-background     : fade(@primary-color,20%);
+@layout-sider-background     : tint(@primary-color, 70%);
+// @layout-sider-text           : contrast(@primary-color, #7786AB, #7786AB);
+@layout-sider-text           : tint(@primary-color, 10%);
+
+// Table
+@table-thead-bg              : #F8F8F8;
+@table-td-hover-bg           : @hover-background;
+
+.ivu-btn {
+    &-default {
+        border: 1px solid @primary-color;
+        color: @primary-color;
+        background-color: #fff;
+    }
+    &-text {
+        color: @primary-color;
+    }
+    &:focus {
+        box-shadow: none;
+    }
+    &-text:focus{
+        box-shadow: none;
+    }
+}
+.ivu-input {
+    border-color: tint(@primary-color, 20%);
+    // &:focus {
+    //     box-shadow: none;
+    // }
+    &-group {
+        .ivu-input {
+            left: -1px;
+        }
+    }
+    &-icon {
+        font-size: 20px;
+        color: @primary-color;
+    }
+}
+.ivu-select-selection {
+    border-color: tint(@primary-color, 20%);
+}
+.ivu-input-group-append .ivu-btn, 
+.ivu-input-group-prepend .ivu-btn {
+    border-color: tint(@primary-color, 20%);
+    border-radius: 4px 0 0 4px;
+    color: #fff;
+    background-color: tint(@primary-color, 20%);
+}
+.ivu-page-item-active {
+    background-color: tint(@primary-color, 20%);
+    border-color: tint(@primary-color, 20%);
+}
+// table
+
+.router-link-active {
+    // background: #EDF3FC;
+    // background: fade(#ffffff,50%);
+    background-color: tint(@primary-color, 90%);
+}
